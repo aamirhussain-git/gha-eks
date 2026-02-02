@@ -6,10 +6,10 @@ on:
 
 jobs:
   myapp-ci:
-    runs-on: ubuntu:katest
+    runs-on: ubuntu-latest
     steps:
       - name: Code Checkout
         uses: actions/checkout@v4
       
       - name: Build docker Image
-        run: "docker build -t aamirhussain3070/myapp:$GITHUB_SHA ."
+        run: "docker build -t aamirhussain3070/myapp:{$GITHUB_SHA::7} ."
