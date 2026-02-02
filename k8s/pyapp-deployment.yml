@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: pyapp
+  name: myapp
   labels:
-    app: pyapp
+    app: myapp
 spec:
   replicas: 4
   selector:
     matchLabels:
-      app: pyapp
+      app: myapp
   template:
     metadata:
       labels:
-        app: pyapp
+        app: myapp
     spec:
       containers:
-        - name: pyapp
-          image: kammana/gha-pyapp:b0e0af8
+        - name: myapp
+          image: aamirhussain3070/myapp:v1
           ports:
             - containerPort: 8000

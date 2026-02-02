@@ -2,12 +2,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: pyapp-service
+  name: myapp-service
   labels:
-    app: pyapp
+    app: myapp
 spec:
   selector:
-    app: pyapp
+    app: myapp
   ports:
     - protocol: TCP
       port: 80

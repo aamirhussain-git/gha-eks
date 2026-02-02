@@ -1,0 +1,15 @@
+name: Kubernetes CICD
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  myapp-ci:
+    runs-on: ubuntu:katest
+    steps:
+      - name: Code Checkout
+        uses: actions/checkout@v4
+      
+      - name: Build docker Image
+        run: "docker build -t aamirhussain3070/myapp:$GITHUB_SHA ."
