@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: myapp
-          image: aamirhussain3070/myapp:0e83d7a
+          image: aamirhussain3070/myapp:ca69b03
           ports:
             - containerPort: 8000
