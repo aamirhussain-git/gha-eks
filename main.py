@@ -14,6 +14,7 @@ def create_app():
             <head><title>Python Docker App</title></head>
             <body style="font-family: Arial, sans-serif; text-align: center; margin-top: 50px;">
                 <h1 style="color: red;">{message}</h1>
+                <h1 align="center">Welcome to the Python Docker App!</h1>
             </body>
         </html>
         """
